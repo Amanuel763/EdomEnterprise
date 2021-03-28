@@ -1,0 +1,407 @@
+body{
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    background-image: linear-gradient(to right bottom,
+    rgba(254, 85, 14, 0.938),
+    rgba(255, 81, 81, 0.959));
+    font-family: 'Vollkorn', serif;
+    font-weight: 400;
+}
+
+.nav-link{
+    color: #fff !important;
+    font-size: 1.5rem;
+}
+.Hero-container{
+    height: 37rem;
+    background-image: linear-gradient(to left bottom,
+    rgba(254, 85, 14, 0.938),
+    rgba(255, 81, 81, 0.959));
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.hero-text{
+    text-align: center;
+    transform: translateY(100%);
+}
+
+.hero-text h1{
+    font-family: 'Vollkorn', serif;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    margin-top: -4rem;
+}
+
+.hero-text p{
+    font-family: 'Vollkorn', serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+
+.btn{
+    padding: 1rem 3.5rem !important;
+    border-radius: 40px !important;
+}
+
+.btn-learn{
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.btn-learn:hover{
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+.btn-call{
+    background-color: none;
+    color: rgb(0, 0, 0) !important;
+    border-radius: none;
+}
+
+.btn-call:hover{
+    border-radius: 40px !important;
+    background-color: #fff;
+    padding: 1rem 3.5rem !important;
+
+}
+
+.hero-img{
+    background: url('../images/IMG_0084\ -\ Copy.jpg');
+    height: 36rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translate(0%, 0%);
+    box-shadow: 2px 2px solid #fff !important;
+}
+
+
+/*Skills*/
+
+.container-skills{
+    height: 40rem;
+}
+.skills-header{
+    text-align: center;
+    color: rgba(255, 81, 81, 0.959);
+    margin-top: 5rem;
+}
+
+.skills-header h1{
+    font-size: 4rem;
+}
+
+.card{
+    height: 18rem;
+    background-color: rgb(255, 255, 255);
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 3px;
+    transition: transform 0.7s;
+    margin-top: 5rem;
+    margin-left: 1.5rem;
+    width: 20rem;
+}
+
+.card:hover{
+    transform: translateY(-1rem) scale(1.0);
+    box-shadow: 0 1rem 1rem rgba(0,0,0);
+}
+
+
+
+/*why choose us*/
+
+.container-skill{
+    height: 30rem;
+}
+
+.skill-header{
+    text-align: center;
+    color: rgba(255, 81, 81, 0.959);
+    margin-bottom: 5rem;
+}
+
+.skill-header h1{
+    font-size: 4rem;
+}
+
+.skill-box{
+    text-align: center;
+}
+
+.diamond{
+    height: 40px;
+    width: 40px;
+    border: 2px solid #000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(45deg);
+}
+
+
+
+.skill-box::after{
+    content: "";
+    position: absolute;
+    margin: auto;
+    height: 2px;
+    background: #000;
+    width: 78%;
+    top: 10%;
+    transform: translateX(12%);
+}
+
+.skill-box h3{
+    margin-top: -2.3rem;
+    margin-bottom: 3rem;
+}
+
+.skill-box-1 h3{
+    text-align: center;
+    margin-top: -2.3rem;
+    margin-bottom: 3rem;
+}
+
+.skill-box-1 h6{
+    text-align: center;
+}
+
+
+/*why choose us end*/
+
+.container-pandemic{
+    background-image: linear-gradient(to right bottom, rgba(218, 71, 71), rgba(255,255,255));  
+    height: 10rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.pandemic-info h5{
+    font-family: 'Vollkorn', serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    width: 100%;
+    margin-top: 2rem;
+    color: #fff;
+}
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #fd8090; /* Set a background color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #af43be;
+    transition: 0.8s; /* Add a dark-grey background on hover */
+  }
+
+
+
+  
+/*Modal start*/
+  
+  #myModal .modal-dialog {
+    max-width: 800px;
+  }
+  
+  #myModal .formWrap {
+    padding: 35px 45px;
+    text-align: center;
+  }
+  
+
+
+  .modal-body{
+      text-align: center;
+      background-image: linear-gradient(to left bottom,
+    rgba(255, 200, 97, 0.938),
+    rgba(255, 81, 81, 0.959));      
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 17em;
+  }
+
+.fa-check-square{
+    font-size: 2rem;
+}
+
+.btn-modal{
+    padding: 0.5rem 2.5rem !important;
+    background-color: #000 !important;
+    color: #fff !important;
+}
+  
+
+/*Modal end*/
+
+
+.container-footer{
+    text-align: center;
+    background-color: #fd8090;
+}
+
+@media (max-width: 64em){
+    body{
+    }
+
+    html{
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+
+    }
+
+    .hero-text h1{
+        font-size: 3rem;
+    }
+
+    #myBtn{
+        right: 90px;
+    }
+
+
+    .container-skills{
+        height: 48rem;
+
+    }
+
+    .card{
+        height: 28rem;
+        width: 13rem;
+        margin-left: 0.8rem;
+    }
+}
+
+@media (max-width: 48em){
+
+    .hero-text{
+        transform: translateY(39%);
+    }
+
+    .container-skills{
+        height: 90rem;
+    }
+
+    .card-position-upper{
+        transform: translate(85%, 7%);
+    }
+    .card-position{
+        transform: translate(-109%, 127%);
+    }
+
+    .card-padding{
+        margin-left: -2rem;
+    }
+
+    .container-skill{
+        height: 35rem;
+    }
+    
+}
+
+@media (max-width: 33.75em){
+    .Hero-container{
+        height: 62rem;
+    }
+
+    .Hero-text{
+        transform: translateY(30%);
+    }
+
+    .hero-img{
+        transform: translate(0%, 29%);
+    }
+
+    .container-pandemic{
+        height: 15rem;
+    }
+
+    .skill-box::after{
+        content: none;
+    }
+
+    .container-skill{
+        height: 50rem;
+    }
+
+    .container-footer{
+        height: 38rem;
+    }
+
+    .Phone, .Hours, .Location{
+        margin-top: 5rem;
+    }
+
+    .modal-content{
+        height: 22rem;
+    }
+
+}
+
+@media (max-width: 25.875em){
+
+    .container-skills{
+        height: 160rem;
+    }
+
+    .container-skill{
+        height: 60rem;
+    }
+
+    .card{
+        margin-left: 6.8rem;
+    }
+
+    .card-padding{
+        margin-top: 5rem;    
+    }
+
+    .card-position-upper{
+        transform: translate(0,0);
+    }
+
+    .card-center{
+        margin-left: 7rem;
+        transform: translateY(-6px);
+    }
+}
+
+
+@media (max-width: 23.4375em){
+    .card-center{
+        margin-left: 5rem;
+
+    }
+
+    .card{
+        margin-left: 5rem;
+    }
+}
